@@ -16,4 +16,12 @@
 | Mês da Estatística                               | Mês de registro da ocorrência.                      | Int       |
 | Data e Hora do Registro do Boletim de Ocorrência | Data completa do registro.                          | Date      |
 | Ano do Boletim de Ocorrência                     | Ano de registro do Boletim de Ocorrência            | Int       |
-| Departamento de Elaboração                       | Nome da delegac
+| Departamento de Elaboração                       | Nome da delegacia responsável pela elaboração       | String    |
+| Departamento de Elaboração                       | Departamento responsável pelo registro do homicídio.| String    |
+| Hora do Fato                                     | Hora relatada no B.O.                               | Timestamp |
+| Logradouro                                       | Endereço do ocorrido.                               | String    |
+| Latitude                                         | Coordenadas do local onde o fato ocorreu.           | Float     |
+| Tipo de Pessoa                                   | Qualificação do indivíduo - focaremos em vítimas.   | String    |
+| Idade da Pessoa                                  | Anos completos de idade.                            | Int       |
+| Cor da Pele                                      | Raça do indivíduo.                                  | String    |
+| Natureza Apurada                                 | Homicídio doloso.                                   | String    |
