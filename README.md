@@ -5,8 +5,11 @@ Análise de Dados de Homicídios Dolosos no Estado de São Paulo: Uma Abordagem 
 ## Integrantes
 
 **Bruno Ferreira** - RA: 10443074
+
 **João Pineda** - RA: 10433696
+
 **Lucas Feo Mazzei** - RA: 10433452
+
 **Rian Fernandes** - RA: 10433740
 
 ## Objetivo
