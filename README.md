@@ -1,6 +1,7 @@
 # Projeto Aplicado I
 
-Análise de Dados de Homicídios Dolosos no Estado de São Paulo: Uma Abordagem Baseada em Metadados da Secretaria de Segurança Pública
+**Análise de Dados de Homicídios Dolosos no Estado de São Paulo: 
+Uma Abordagem Baseada em Metadados da Secretaria de Segurança Pública**
 
 ## Integrantes
 
