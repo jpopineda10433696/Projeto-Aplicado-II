@@ -1,4 +1,22 @@
-# Análise e Compreensão dos Metadados
+# Kick Off
+
+## Introdução
+
+  Este trabalho foi realizado por um grupo de estudantes com o objetivo de analisar dados de homicídios dolosos no estado de São Paulo. Os dados utilizados estão disponíveis no portal de transparência da Secretaria de Segurança Pública do Estado de São Paulo (SSP-SP) e abrangem o período de 2017 a 2022.
+
+  O projeto busca entender os padrões e tendências dos homicídios dolosos no estado, utilizando uma base de dados extensa que inclui informações sobre localização, data e hora dos crimes, características das vítimas (como idade, gênero, raça e profissão) e detalhes específicos dos incidentes. A análise desses dados permite identificar grupos mais vulneráveis e compreender melhor as dinâmicas da criminalidade.
+
+  Ao realizar essa análise, o grupo espera contribuir para uma compreensão mais aprofundada dos fatores que influenciam os homicídios dolosos em São Paulo, fornecendo insights que possam ser utilizados para o desenvolvimento de políticas de segurança pública mais eficazes e estratégias de prevenção.
+
+## Organização
+
+  Para desenvolver o projeto foi escolhida a Secretaria da Segurança Pública do Estado de São Paulo (SSP-SP) que é um órgão do governo estadual responsável pela coordenação e administração das políticas de segurança pública. A SSP-SP tem como principais funções a prevenção, controle e combate à criminalidade, além de garantir a segurança das pessoas, propriedades e comunidades.
+  
+  A SSP-SP também coordena programas de segurança comunitária e trabalha em conjunto com outras instituições para promover a segurança e o bem-estar da população.
+  
+  Essa secretaria conta com uma base de dados extensa que contém informações sobre diversos setores onde a organização atua.
+
+## Análise e Compreensão dos Metadados
 
   Os dados escolhidos estão disponíveis no portal de transparência da SSP e refere-se aos registros de homicídios dolosos do estado de São Paulo entre os períodos de 2017 a 2022.
 
