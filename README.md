@@ -21,9 +21,13 @@ Uma Abordagem Baseada em Metadados da Secretaria de Segurança Pública**
 
   Ao realizar essa análise, o grupo espera contribuir para uma compreensão mais aprofundada dos fatores que influenciam os homicídios dolosos em São Paulo, fornecendo insights que possam ser utilizados para o desenvolvimento de políticas de segurança pública mais eficazes e estratégias de prevenção.
 
+## Cronograma
+
+![image](https://github.com/user-attachments/assets/dccfd58c-cd74-4270-a641-2116aac15ec1)
+
 ## Sumário
 
 1. [Kick Off](https://github.com/jpopineda10433696/Projeto-Aplicado-I/tree/main/Kick%20Off)
-2. [Definição do Produto Analítico](https://github.com/jpopineda10433696/Projeto-Aplicado-I/tree/main/Defini%C3%A7%C3%A3o%20do%20Produto%20Anal%C3%ADtico)
+2. [Análise Exploratória dos Dados](https://github.com/jpopineda10433696/Projeto-Aplicado-I/tree/main/Defini%C3%A7%C3%A3o%20do%20Produto%20Anal%C3%ADtico)
 3. [Data Storytelling](https://github.com/jpopineda10433696/Projeto-Aplicado-I/tree/main/Data%20Storytelling)
 4. [Apresentação dos Resultados](https://github.com/jpopineda10433696/Projeto-Aplicado-I/tree/main/Apresenta%C3%A7%C3%A3o%20dos%20Resultados)
