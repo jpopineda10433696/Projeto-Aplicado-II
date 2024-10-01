@@ -82,7 +82,7 @@ na integralidade, o conjunto de dados.
 | Longitude | Coordenadas do local onde o fato ocorreu.                                               | Float   |
 | Tipo de Pessoa | Qualificação do indivíduo, focaremos em vitimas                          | String  |
 | Sexo da Pessoa | Gênero do indivíduo                                                            | String  |
-| Idade da Pessco | Anos completos de idade.                                                        | Int     |
+| Idade da Pessoa | Anos completos de idade.                                                        | Int     |
 | Data de Nascimento da Pessoa | Data de nascimento completa do indivíduo                                                | Date    |
 | Cor da Pele | Raça do indivíduo.                                                             | String  |
 | Profissão | Ocupação profissional do indivíduo.                                           | String  |
