@@ -2,91 +2,64 @@
 
 ## Introdução
 
-  Este trabalho foi realizado por um grupo de estudantes com o objetivo de analisar dados de 
-homicídios dolosos no estado de São Paulo. Os dados utilizados estão disponíveis no portal de 
-transparência da Secretaria de Segurança Pública do Estado de São Paulo (SSP-SP) e 
-abrangem o período de 2017 a 2022.
+O projeto tem como objetivo analisar a percepção pública sobre o Sistema Único de
+Saúde (SUS) por meio da coleta e análise de tweets na plataforma X. 
 
-  O projeto busca entender os padrões e tendências dos homicídios dolosos no estado, 
-utilizando uma base de dados extensa que inclui informações sobre localização, data e hora 
-dos crimes, características das vítimas (como idade, gênero, raça e profissão) e detalhes 
-específicos dos incidentes. A análise desses dados permite identificar grupos mais vulneráveis 
-e compreender melhor as dinâmicas da criminalidade.
-
-  Ao realizar essa análise, o grupo espera contribuir para uma compreensão mais aprofundada 
-dos fatores que influenciam os homicídios dolosos em São Paulo, fornecendo insights que 
-possam ser utilizados para o desenvolvimento de políticas de segurança pública mais eficazes 
-e estratégias de prevenção.
+Utilizando
+técnicas de Processamento de Linguagem Natural (PLN) e mineração de dados,
+buscaremos identificar padrões, sentimentos predominantes (positivos, negativos
+ou neutros) e principais tópicos discutidos pelos usuários.
 
 ## Cronograma
 
-![image](https://github.com/user-attachments/assets/26e0ff97-220c-4258-8e8c-a1c1bd1c096c)
+![image](https://github.com/user-attachments/assets/f61bc97e-cf04-47f3-b975-db0a643d65d9)
 
 ## Organização
 
-  Para desenvolver o projeto foi escolhida a Secretaria da Segurança Pública do Estado de São 
-Paulo (SSP-SP) que é um órgão do governo estadual responsável pela coordenação e 
-administração das políticas de segurança pública. A SSP-SP tem como principais funções a 
-prevenção, controle e combate à criminalidade, além de garantir a segurança das pessoas, 
-propriedades e comunidades.
+A rede social X (antigo Twitter) é amplamente utilizada para o compartilhamento de
+opiniões, notícias e debates em tempo real. Com milhões de usuários ativos
+diariamente, a rede social permite que indivíduos expressem suas percepções sobre
+diversos temas, incluindo saúde pública, políticas sociais e serviços
+governamentais, principalmente através de texto.
 
-  A SSP-SP também coordena programas de segurança comunitária e trabalha em conjunto com 
-outras instituições para promover a segurança e o bem-estar da população.
-Essa secretaria conta com uma base de dados extensa que contém informações sobre 
-diversos setores onde a organização atua.
 
-## Apresentação dos Dados
+As opiniões expressas nas redes sociais, frequentemente viram pauta de políticas
+públicas, manifestações sociais e ações de campanhas publicitárias de empresas.
+Isso se dá em razão de características únicas da Rede Social X, como por exemplo,
+os ‘Assuntos do Momento’ ou trend topics que revelam os assuntos mais
+comentados na região que o usuário está acessando a plataforma.
 
-  Os dados escolhidos estão disponíveis no portal de transparência da SSP1 e refere-se aos 
-registros de homicídios dolosos do estado de São Paulo entre os períodos de 2017 a 2022.
+## Apresentação dos Dados (Metadados)
 
-  A Secretaria de Segurança Pública de São Paulo divulga bases de registros de crimes contra a 
-vida e as divide entre homicídio doloso, feminicídio, latrocínio, morte suspeita e lesão corporal 
-seguida de morte, para o projeto em questão, foi escolhida a base ‘Homicídio Doloso’ diante da 
-robustez dos dados – tendo em vista que, nesta base, as informações à respeito das vítimas e 
-do fato ocorrido são mais completas, além de contar com mais registros que as demais dada a 
-natureza generalista do crime.
+ ![image](https://github.com/user-attachments/assets/c88f267d-2b72-4ef9-9726-ed868a41faef)
 
-## Proposta Analítica e Resultados pretendidos
+Utilizando ferramentas de
+Web Scraping, ou seja, “raspagem” de dados de
+páginas da internet, os metadados dos tweets a serem coletados seguem o
+seguinte modelo:
 
-  A partir da análise dos dados disponibilizados, buscamos identificar padrões, aferir tendências 
-ao longo do tempo, relacionar informações de gênero, profissão e faixa etária para 
-compreender os grupos mais vulneráveis à condição de vítima desses crimes.
+![image](https://github.com/user-attachments/assets/3b315437-6e11-4253-83d3-216ef7e658be)
 
-  Abaixo, buscamos definir cada uma das colunas do conjunto de dados a fim de compreender, 
-na integralidade, o conjunto de dados.
+Os principais atributos do
+dataset estão distribuídos em:
 
-| Nome do Campo | Definição                                                                     | Tipo    |
-|--------------|------------------------------------------------------------------------------|---------|
-| Departamento da Circunscrição | Departamento responsável pelo registro do homicídio                | String  |
-| Seccional da Circunscrição  | Divisão da seccional do departamento responsável.                   | String  |
-| Municipio da Circunscrição  | Municipio Responsável pelo B.O                                         | String  |
-| Departamento da Circunscrição  | Subdivisão do municipio geralmente, bairro.                       | String  |
-| Número de Vitimas de Homicidio Doloso | Quantidade de vitimados pelo ato registrado.                    | Int     |
-| Identificação da Delegacia | ID único de delegacia responsável pela apuração.                       | String  |
-| Mês da Estatistica | Mês de registro da ocorrência.                                            | Int     |
-| Ano da Estatistica | Ano de registro da ocorrência.                                                 | Int.    |
-| Data e Hora do Registro do Boletim de Ocorrência | Data completa do registro                                                       | Date    |
-| Número do Boletim de Ocorrência | ID único do boletim de ocorrência                                               | String  |
-| Ano do Boletim de Ocorrência | Ano de registro do Boletim de Ocorrência                                                   | Int.    |
-| Municipio de Elaboração | Municipio Responsável pelo B.O                                                   | String  |
-| Departamento de Elaboração | Nome da delegacia responsável pela elaboração                       | String  |
-| Seccional de Elaboração | Divisão da seccional do departamento responsável pelo B.O.              | String  |
-| Departamento de Elaboração | Departamento responsável pelo registro do homicídio                | String  |
-| Data do Fato | Dia do ocorrido presente no B.O                                                 | Date    |
-| Hora do Fato | Hora relatada no B.0.                                                           | Timestamp|
-| Descrição do Tipo de Local | Local relatado da ocorrência.                                                  | String  |
-| Logradouro | Endereço do ocorrido                                                           | String  |
-| Número do Logradouro | Número do local caso trate-se de uma edificação                | int     |
-| Latitude | Coordenadas do local onde o fato ocorreu.                                               | Float   |
-| Longitude | Coordenadas do local onde o fato ocorreu.                                               | Float   |
-| Tipo de Pessoa | Qualificação do indivíduo, focaremos em vitimas                          | String  |
-| Sexo da Pessoa | Gênero do indivíduo                                                            | String  |
-| Idade da Pessoa | Anos completos de idade.                                                        | Int     |
-| Data de Nascimento da Pessoa | Data de nascimento completa do indivíduo                                                | Date    |
-| Cor da Pele | Raça do indivíduo.                                                             | String  |
-| Profissão | Ocupação profissional do indivíduo.                                           | String  |
-| Natureza Apurada | Homicídio dolosso                                                                | String  |
+1. **date**: data e hora de criação da publicação;
+2. **url**: link para acesso ao tweet;
+3. **username**: nome de usuário que realizou a publicação;
+4. **content**: conteúdo do tweet a ser realizada a análise de sentimento.
+
+## Objetivos e Metas
+
+A análise dos tweets possibilitará:
+1. Compreensão aprofundada da percepção pública sobre o Sistema Único de
+Saúde (SUS).
+2. Identificação de padrões e tendências nas opiniões compartilhadas na
+plataforma.
+3. Classificação das opiniões em sentimentos positivos, negativos ou neutros,
+funcionando como um termômetro da opinião pública.
+4. Geração de insights relevantes para pesquisas em saúde pública e
+potenciais políticas.
+ 
 
 
 
