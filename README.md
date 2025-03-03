@@ -25,9 +25,6 @@ funcionando como um termômetro da opinião pública.
 4. Geração de insights relevantes para pesquisas em saúde pública e
 potenciais políticas.
 
-## Link para o Projeto no GitHub
-https://github.com/jpopineda10433696/Projeto-Aplicado-II
-
 ## Cronograma
 
 ![image](https://github.com/user-attachments/assets/f61bc97e-cf04-47f3-b975-db0a643d65d9)
