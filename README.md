@@ -15,19 +15,18 @@
 ## Objetivo
 
 A análise dos tweets possibilitará:
-    ● Compreensão aprofundada da percepção pública sobre o Sistema Único de
+
+1. Compreensão aprofundada da percepção pública sobre o Sistema Único de
 Saúde (SUS).
-    ● Identificação de padrões e tendências nas opiniões compartilhadas na
+2. Identificação de padrões e tendências nas opiniões compartilhadas na
 plataforma.
-    ● Classificação das opiniões em sentimentos positivos, negativos ou neutros,
+3. Classificação das opiniões em sentimentos positivos, negativos ou neutros,
 funcionando como um termômetro da opinião pública.
-    ● Geração de insights relevantes para pesquisas em saúde pública e
+4. Geração de insights relevantes para pesquisas em saúde pública e
 potenciais políticas.
 
-4. Link para o Projeto no GitHub
+## Link para o Projeto no GitHub
 https://github.com/jpopineda10433696/Projeto-Aplicado-II
-5
-
 
 ## Cronograma
 
