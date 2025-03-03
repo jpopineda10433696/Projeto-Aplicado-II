@@ -1,6 +1,6 @@
 # Projeto Aplicado II
 
-**Título do Projeto**
+**Análise de Impressões e Sentimentos sobre o Sistema Único de Saúde (SUS) a partir de Publicações na Rede Social X**
 
 ## Integrantes
 
@@ -14,7 +14,20 @@
 
 ## Objetivo
 
- Inserir objetivo
+A análise dos tweets possibilitará:
+    ● Compreensão aprofundada da percepção pública sobre o Sistema Único de
+Saúde (SUS).
+    ● Identificação de padrões e tendências nas opiniões compartilhadas na
+plataforma.
+    ● Classificação das opiniões em sentimentos positivos, negativos ou neutros,
+funcionando como um termômetro da opinião pública.
+    ● Geração de insights relevantes para pesquisas em saúde pública e
+potenciais políticas.
+
+4. Link para o Projeto no GitHub
+https://github.com/jpopineda10433696/Projeto-Aplicado-II
+5
+
 
 ## Cronograma
 
