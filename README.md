@@ -18,7 +18,8 @@
 
 ## Cronograma
 
-![image](https://github.com/user-attachments/assets/dccfd58c-cd74-4270-a641-2116aac15ec1)
+![image](https://github.com/user-attachments/assets/f61bc97e-cf04-47f3-b975-db0a643d65d9)
+
 
 ## Sumário
 
