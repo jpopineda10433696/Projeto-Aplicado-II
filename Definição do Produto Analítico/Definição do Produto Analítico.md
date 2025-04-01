@@ -28,22 +28,29 @@ O dataframe foi criado via biblioteca pandas e abaixo estão as principais carac
 
 	O dataset é composto por 5 colunas, que representam características do tweet, como data de publicação, link para acesso, usuário, conteúdo e rótulo de sentimento, conforme mencionado anteriormente.
 
-  
+  ![image](https://github.com/user-attachments/assets/9285eda4-faaa-4998-a836-b26b7cb27bc1)
+
 
 - **Tipos de dados**
 
 	Os tipos de dados são, em sua maior parte, do tipo “object” devido a alta variação do tipo de conteúdo de cada atributo. Já a coluna “sentimento” é do tipo “int64” pois os rótulos de sentimento foram escolhidos com base em números inteiros (-1,0,1).
-
+	
+	![image](https://github.com/user-attachments/assets/8714d884-4afd-4ae9-929d-79c2a67aa4da)
 
 - **Distribuição dos sentimentos (rótulos)**
 
   De acordo com a distribuição abaixo sobre os sentimentos, é possível verificar que cerca de 40 dos 59 tweets são negativos em relação à situação da saúde no Brasil (aproximadamente 68% do total).
   Em relação aos sentimentos negativos ou neutros, não existe nenhuma variação perceptível dentro da amostra de tweets mais recentes.
 
+	![image](https://github.com/user-attachments/assets/68892ca5-796b-4414-95af-e9636d252e27)
+
+  
 - **Nuvem de palavras**
 
   É possível verificar que, sem um tratamento adequado da base de dados, não é possível distinguir termos relacionados à classificação de sentimentos dentro da nuvem de palavras, pois as mesmas trazem uma densidade maior de termos com maior repetição, em sua maioria artigos, preposições e conjunções (ou stopwords, conceito que será explorado na próxima etapa).
-  
+
+  ![image](https://github.com/user-attachments/assets/637df20a-ef20-40fb-a314-ce7f1c381ecc)
+
 
 # Tratamento da base de dados
 
@@ -69,6 +76,9 @@ Devido a complexidade da manipulação de linguagem natural, o tratamento da bas
       df['texto_limpo'] = df['texto_limpo'].apply(lambda x: ' '.join([word for word in word_tokenize(x) if word not in stop_words]))
 
 Por fim, com a aplicação das funções acima de tratamento do dataset e realizando um filtro de palavras-chave que foram utilizados para pesquisa do tweet, obtemos a nova nuvem de palavras abaixo.
+
+![image](https://github.com/user-attachments/assets/40dfc268-a30a-4d1c-b9b7-4c0705ad8ab8)
+
 
 É possível perceber que as palavras maiores como “fila”, “atendimento”, “falta” e “morrem” (e derivados), corrobora a distribuição anterior dos rótulos de dados de que grande parte dos tweets se refere a fatores negativos ou reclamações específicas sobre o sistema público de saúde no Brasil.
 
