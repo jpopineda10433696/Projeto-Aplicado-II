@@ -34,5 +34,5 @@ potenciais políticas.
 
 1. [Kick Off](https://github.com/jpopineda10433696/Projeto-Aplicado-II/blob/main/Kick%20Off/Kick%20Off.md)
 2. [Definição do Produto Analítico (Script Python)](https://github.com/jpopineda10433696/Projeto-Aplicado-II/tree/main/Defini%C3%A7%C3%A3o%20do%20Produto%20Anal%C3%ADtico)
-3. [Data Storytelling](https://github.com/jpopineda10433696/Projeto-Aplicado-II/tree/main/Data%20Storytelling)
+3. [Apresentação de Produtos e Storytelling](https://github.com/jpopineda10433696/Projeto-Aplicado-II/tree/main/Data%20Storytelling)
 4. [Apresentação dos Resultados](https://github.com/jpopineda10433696/Projeto-Aplicado-II/tree/main/Apresenta%C3%A7%C3%A3o%20dos%20Resultados)
