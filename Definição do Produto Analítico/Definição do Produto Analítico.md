@@ -28,28 +28,32 @@ O dataframe foi criado via biblioteca pandas e abaixo estão as principais carac
 
 	O dataset é composto por 5 colunas, que representam características do tweet, como data de publicação, link para acesso, usuário, conteúdo e rótulo de sentimento, conforme mencionado anteriormente.
 
-  ![image](https://github.com/user-attachments/assets/9285eda4-faaa-4998-a836-b26b7cb27bc1)
+  ![image](https://github.com/user-attachments/assets/3424e88d-a472-46be-8db3-f5b955b6d8c8)
+
 
 
 - **Tipos de dados**
 
 	Os tipos de dados são, em sua maior parte, do tipo “object” devido a alta variação do tipo de conteúdo de cada atributo. Já a coluna “sentimento” é do tipo “int64” pois os rótulos de sentimento foram escolhidos com base em números inteiros (-1,0,1).
 	
-	![image](https://github.com/user-attachments/assets/8714d884-4afd-4ae9-929d-79c2a67aa4da)
+	![image](https://github.com/user-attachments/assets/7aebadcb-cc7e-47ab-88f2-2a95407a653c)
+
 
 - **Distribuição dos sentimentos (rótulos)**
 
-  De acordo com a distribuição abaixo sobre os sentimentos, é possível verificar que cerca de 40 dos 59 tweets são negativos em relação à situação da saúde no Brasil (aproximadamente 68% do total).
+  De acordo com a distribuição abaixo sobre os sentimentos, é possível verificar que cerca de 68 dos 100 tweets são negativos em relação à situação da saúde no Brasil (aproximadamente 68% do total).
   Em relação aos sentimentos negativos ou neutros, não existe nenhuma variação perceptível dentro da amostra de tweets mais recentes.
 
-	![image](https://github.com/user-attachments/assets/68892ca5-796b-4414-95af-e9636d252e27)
+	![image](https://github.com/user-attachments/assets/5ca3028a-30dd-4eb6-b6eb-0f1a5f3ce605)
+
 
   
 - **Nuvem de palavras**
 
   É possível verificar que, sem um tratamento adequado da base de dados, não é possível distinguir termos relacionados à classificação de sentimentos dentro da nuvem de palavras, pois as mesmas trazem uma densidade maior de termos com maior repetição, em sua maioria artigos, preposições e conjunções (ou stopwords, conceito que será explorado na próxima etapa).
 
-  ![image](https://github.com/user-attachments/assets/637df20a-ef20-40fb-a314-ce7f1c381ecc)
+  ![image](https://github.com/user-attachments/assets/4e37ab67-12e7-41ae-a026-7c19849ce3b5)
+
 
 
 # Tratamento da base de dados
@@ -77,10 +81,11 @@ Devido a complexidade da manipulação de linguagem natural, o tratamento da bas
 
 Por fim, com a aplicação das funções acima de tratamento do dataset e realizando um filtro de palavras-chave que foram utilizados para pesquisa do tweet, obtemos a nova nuvem de palavras abaixo.
 
-![image](https://github.com/user-attachments/assets/40dfc268-a30a-4d1c-b9b7-4c0705ad8ab8)
+![image](https://github.com/user-attachments/assets/944e07b1-7e22-4238-8550-84ca6f15ce4c)
 
 
-É possível perceber que as palavras maiores como “fila”, “atendimento”, “falta” e “morrem” (e derivados), corrobora a distribuição anterior dos rótulos de dados de que grande parte dos tweets se refere a fatores negativos ou reclamações específicas sobre o sistema público de saúde no Brasil.
+
+É possível perceber que as palavras maiores como “fila”, “atendimento”, “falta”, “péssimo”, “horrível” e “problema” (e derivados), corrobora a distribuição anterior dos rótulos de dados de que grande parte dos tweets se refere a fatores negativos ou reclamações específicas sobre o sistema público de saúde no Brasil.
 
 Nas próximas etapas, serão construídos algoritmos de aprendizado de máquina para criar um modelo que realizará a análise dessas principais palavras e irá atribuir rótulos de classificação de sentimento para identificar a acurácia do modelo em relação à rotulagem atribuída pelo grupo.
 
@@ -122,7 +127,29 @@ Para essa garantia, utilizaremos as seguintes métricas de avaliação:
 
     A matriz de confusão compara as frequências de classificação para cada classe do modelo, ou seja, mostrando as classificações corretas e incorretas para cada classe. Esse tipo de métrica é importante pois permite identificar onde exatamente está a maior taxa de erro do modelo.
 
-  - **AUC-ROC**
+  - **Relatório de Classificação**
     
-  	É uma métrica de desempenho utilizada para representar o desempenho de um modelo de classificação e mostra a capacidade de um modelo em distinguir entre duas classes (positivo e negativo, em nosso caso).
-  	Essa métrica é composta pela curva ROC, que é uma ferramenta visual que define a taxa de verdadeiros positivos contra falsos positivos. Além disso, também contém o AUC, que determina a área sob a curva ROC. Quanto mais próxima de 1, melhor o desempenho do modelo.
+	É uma métrica de desempenho do modelo realizando a divisão do mesmo em classes. Esse relatório é dividido nas seguinte métricas principais:
+
+	**1. Precision**
+
+		𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 = 𝑉𝑒𝑟𝑑𝑎𝑑𝑒𝑖𝑟𝑜𝑠 𝑃𝑜𝑠𝑖𝑡𝑖𝑣𝑜𝑠/(𝑉𝑒𝑟𝑑𝑎𝑑𝑒𝑖𝑟𝑜𝑠 𝑃𝑜𝑠𝑖𝑡𝑖𝑣𝑜𝑠 + 𝐹𝑎𝑙𝑠𝑜𝑠 𝑃𝑜𝑠𝑖𝑡𝑖𝑣𝑜𝑠)
+
+	Ou seja, mede do total de previsões positivas, quantas estão corretas.
+
+	**2. Recall**
+
+		𝑅𝑒𝑐𝑎𝑙𝑙 = 𝑉𝑒𝑟𝑑𝑎𝑑𝑒𝑖𝑟𝑜𝑠 𝑃𝑜𝑠𝑖𝑡𝑖𝑣𝑜𝑠/(𝑉𝑒𝑟𝑑𝑎𝑑𝑒𝑖𝑟𝑜𝑠 𝑃𝑜𝑠𝑖𝑡𝑖𝑣𝑜𝑠 + 𝐹𝑎𝑙𝑠𝑜𝑠 𝑁𝑒𝑔𝑎𝑡𝑖𝑣𝑜𝑠)
+
+	Do total de casos realmente positivos, quantos foram identificados.
+
+	**3. F1-Score**
+
+		𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 = 2 * (𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 * 𝑅𝑒𝑐𝑎𝑙𝑙)/(𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 + 𝑅𝑒𝑐𝑎𝑙𝑙)
+
+	Média harmônica entre Precision e Recall, avaliando o equilíbrio entre essas
+	duas métricas.
+
+	**4. Support**
+
+	Número de ocorrências de cada classe no conjunto de dados.
